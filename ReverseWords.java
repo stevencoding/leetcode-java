@@ -10,4 +10,11 @@ public class ReverseWords{
 		}
 		return sb.length()==0? "" : sb.substring(0, sb.length()-1);
 	}
+
+    public static void main(String[] args){
+        ReverseWords sol = new ReverseWords();
+        String tc1 = "Hello World!";
+        String res1 = sol.reverseWords(tc1);
+ 		System.out.println(res1);
+    }
 }

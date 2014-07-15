@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class TwoSum{
 	public int[] twoSum(int[] numbers, int target){
 		HashMap<Integer, Integer> hash = new HashMap<Integer, Integer>();
@@ -14,4 +16,12 @@ public class TwoSum{
 		}
 		return res;
 	}
+
+    public static void main(String[] args){
+        TwoSum sol = new TwoSum();
+        int[] tc1_1 = {1, 2, 3, 4};
+        int tc1_2 = 5;
+        int[] res1 = sol.twoSum(tc1_1, tc1_2);
+ 		System.out.println(Arrays.toString(res1));
+ 	}
 }

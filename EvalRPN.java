@@ -31,13 +31,12 @@ public class EvalRPN{
     }
 
     public static void main(String[] args){
-        String[] tc1 = {"0", "3", "/"};
-        String[] tc2 = {"-3", "3", "/"};
         EvalRPN sol = new EvalRPN();
+        String[] tc1 = {"0", "3", "/"};
         int res1 = sol.evalRPN(tc1);
         System.out.println(res1);
+        String[] tc2 = {"-3", "3", "/"};
         int res2 = sol.evalRPN(tc2);
         System.out.println(res2);
     }
 }
-
